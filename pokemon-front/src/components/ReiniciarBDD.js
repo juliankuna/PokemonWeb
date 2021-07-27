@@ -8,7 +8,7 @@ import {getPokemones} from '../PokeApi';
 
 const ReiniciarBDD = () => {
    
-    const urlBDD = "https://localhost:5001/api/Pokemon/";
+    const urlBDD = "http://localhost:5000/api/Pokemon/pokemon";
     const [cantidad, setCantidad]= useState(0);
 
     const cargarPokemones = (async () => {
@@ -23,7 +23,7 @@ const ReiniciarBDD = () => {
         var pokeBDD = {id: 0, nombre: "", vecesbuscado: 0, favorito: false};
         // console.log("basico: "+ pokeBDD)
         let cant=0
-        const resetBdd = await axios.delete(urlBDD);
+        //const resetBdd = await axios.delete(urlBDD);
         // console.log("resultado del deletebdd: " +resetBdd)
         const promesas = await Promise.all(data.results.map(async (pokemon, index) => {
                 console.log(pokemon.name);
@@ -50,7 +50,7 @@ const ReiniciarBDD = () => {
 
     useEffect(() => {
         cargarPokemones();
-      }, []);
+      }, [cantidad]);
     return (
         <h2>Se cargaron {cantidad} pokemones en la bdd</h2>
       

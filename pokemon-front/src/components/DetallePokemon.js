@@ -18,7 +18,7 @@ const DetallePokemon = (props) => {
                     alt={pokemon.name}
                     className="pokemon-hd"
                 />
-                <h2>Types:  </h2>
+                <h2 className="pokemon-type-text">Tipo:  </h2>
                 
                 <div className="pokemon-type-detalle">
                     
@@ -37,7 +37,7 @@ const DetallePokemon = (props) => {
 
                     
                 </div>
-                <h2>Stats:</h2>
+                <h2></h2>
                 <PokemonStats pokemon={pokemon} />
             </div>
 

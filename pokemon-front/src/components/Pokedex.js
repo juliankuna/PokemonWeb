@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css';
 import Pokemon from './Pokemon';
 import Pagination from './Pagination';
+import images from "../images/images";
+
 const Pokedex = (props) => {
     
     const {pokemones, page, setPage, total, loading} = props;
@@ -28,7 +30,7 @@ const Pokedex = (props) => {
                     />    
                 </div>
 
-                {loading? (<div>Cargando pokemones...</div>) :
+                {loading? (<div><img src={images.img3} className="pikachu-run" /><div>Cargando pokemones...</div></div>) :
 
              
                 <div className="pokedex-grid">

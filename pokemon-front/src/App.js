@@ -104,10 +104,10 @@ function App() {
             <Router>
               <div className="botonera">
                 <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-                  <Button component={Link} to="/SingIn" >Login</Button>
-                  <Button component={Link} to="/ReiniciarBDD" >Reiniciar BDD</Button>
+                {/* <Button component={Link} to="/ReiniciarBDD" >Reiniciar BDD</Button> */}
+                   {/*<Button component={Link} to="/ReiniciarBDD" >Reiniciar BDD</Button>*/}
                   <Button component={Link} to="/" >Buscador</Button>
-                  <Button component={Link} to="/BuscarPorTipo" >Buscar por tipo</Button>
+                  {/*<Button component={Link} to="/BuscarPorTipo" >Buscar por tipo</Button> */}
                   <Button component={Link} to="/Pokedex" >Pokedex</Button>
                   <Button component={Link} to="/PokeFavs" >Favoritos</Button>
                   <Button component={Link} to="/MasBuscados" >Mas Buscados</Button>
@@ -115,15 +115,12 @@ function App() {
               </div>
 
               <Switch>
-              <Route path="/SingIn" >
-                  <hr></hr>
-                  <SingIn />
-                </Route>
+              
 
-              <Route path="/ReiniciarBDD" >
+              {/* <Route path="/ReiniciarBDD" >
                   <hr></hr>
                   <ReiniciarBDD />
-                </Route>
+                </Route> */}
 
                 <Route path="/" exact>
                   <hr></hr>

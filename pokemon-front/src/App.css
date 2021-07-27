@@ -91,6 +91,7 @@ align-items: center;
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
   flex: 1;
+  
 
 }
 
@@ -166,14 +167,14 @@ padding: 10px;
 }
 
 .pokemon-stats{
-  margin-bottom: 200px;
-  grid-template-columns: auto auto auto auto auto auto;
+  margin-bottom: 30px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
   display: grid;
   grid-gap: 10px;
   align-items:flex-end;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
 }
 
 
@@ -190,12 +191,7 @@ padding: 10px;
   
 }
 
-.Navbar-image{
-  
-  align-items: center;
-  margin:auto;
-  width:200px;
-}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -217,9 +213,9 @@ padding: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     margin:auto;
     margin-bottom: 10px;
+   
 }
 
 
@@ -235,3 +231,62 @@ padding: 10px;
 }
 
 
+.Encabezado{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  
+}
+
+.contenedor-logo{
+display: flex;
+justify-content: center;
+margin-right: auto;
+}
+
+.Navbar-image{
+  align-items: center;
+  margin:auto;
+  width:200px;
+  justify-content: center;
+  display: flex;
+}
+
+.Encabezado-Usuario{
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: normal;
+  margin-left: auto;
+  margin-right: 0%;
+}
+
+.tabla-MasBuscados{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.pikachu-run{
+height: 100px;
+width: 120px;
+
+}
+
+.pikachu-caminando{
+  align-items: center;
+  margin:auto;
+  width:200px;
+  justify-content: center;
+  display: flex;
+}
+
+
+.Buscardor{
+  
+}

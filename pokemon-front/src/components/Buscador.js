@@ -5,10 +5,13 @@ import {TextField, Button} from '@material-ui/core';
 import Pokemon from './Pokemon';
 import DetallePokemon from "./DetallePokemon";
 import axios from 'axios';
+
+import images from "../images/images";
+
 const Buscador = () => {
     const [buscar, setBuscar] = useState('');
     const [pokemon, setPokemon] = useState();
-    const urlBDD = "https://localhost:5001/api/Pokemon/";
+    const urlBDD = "http://localhost:5000/api/Pokemon/";
     const cambiosEnElTexto = ((nombrePokemon) => {
         console.log(nombrePokemon)
         setBuscar(nombrePokemon)
@@ -42,11 +45,11 @@ const Buscador = () => {
             const response = await axios.get(urlBDD+pokemon.id)
             const pokemonBDD = response.data
             console.log("pokemonBDD :" + pokemonBDD.nombre)
-            //AUMENTAMOS EN UNO EL NUMERO DE VECES QUE FUE BUSCADO
-            pokemonBDD.vecesbuscado ++
+            //AUMENTAMOS EN UNO EL NUMERO DE VECES QUE FUE BUSCADO EN EL BACKEND
+           
 
             //ACTUALIZAMOS EL POKEMON EN LA BDD para que figure el numero actualizado de busquedas
-            await axios.put(urlBDD+pokemon.id, pokemonBDD )
+            await axios.put(urlBDD, pokemonBDD )
             .then(response =>{
                 
                 var respuesta = response.data
@@ -67,7 +70,12 @@ const Buscador = () => {
 
 
     return (
-        <div>
+        <div className="Buscador">
+            <img  src={images.img2}
+
+            alt="pokemon-logo"
+            className="pikachu-caminando"
+            />
             <div>
                  <TextField id="outlined-basic" label="Buscar pokemon..." variant="outlined" size= "small" onChange={(campoTexto) => cambiosEnElTexto(campoTexto.target.value)}/>
                  <Button color="primary" variant="contained" size="medium" onClick={clickBuscar}>Buscar </Button>
