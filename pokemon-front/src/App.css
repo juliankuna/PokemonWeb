@@ -115,6 +115,7 @@ align-items: center;
 .pokemon-type-text {
 margin-right: 10px;
 text-transform: capitalize;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -131,9 +132,9 @@ padding: 10px;
 }
 
 .detalle-body{
+  display: flex;
   margin-bottom: 540px;
   margin-top: 30px;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -163,6 +164,19 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  
+}
+
+.pokemon-type-detalle-2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: auto ;
+  grid-gap: 5px;
+
+
   
 }
 

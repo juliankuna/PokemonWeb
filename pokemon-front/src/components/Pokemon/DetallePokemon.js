@@ -19,15 +19,14 @@ const DetallePokemon = (props) => {
                     className="pokemon-hd"
                 />
 
-                <table>
-                    <tr>
-                        <td><h2 className="pokemon-type-text">Tipo:  </h2></td>
-                        <td className="pokemon-type-detalle">
+                <table className="pokemon-type-detalle" >
+                    <tr className="pokemon-type-detalle">
+                        <td ><h2 className="pokemon-type-text">Tipo:  </h2></td>
+                        <td >
 
                             {pokemon.types.map((type, indice) => {
                                 return (
                                     <tr>
-
                                         <h2 key={indice} className="pokemon-type-text" >
                                             {type.type.name}</h2>
                                     </tr>
@@ -36,8 +35,6 @@ const DetallePokemon = (props) => {
 
                             }
                             )}
-
-
                         </td>
                     </tr>
 

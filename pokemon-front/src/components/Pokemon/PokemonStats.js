@@ -11,37 +11,40 @@ const PokemonStats = (props) => {
 
 
     return (
-        <div>
+        <div >
             <table className="pokemon-type-detalle">
-               <tr>
+                <tr>
                     <td><h2 className="pokemon-type-text">Habilidades:</h2></td>
                     <td>
-                {pokemon.abilities.map((ability, indice) => {
-                    return (
+                        {pokemon.abilities.map((ability, indice) => {
+                            return (
 
-                        <tr>
-                            <h2 key={indice} className="pokemon-type-text" >{ability.ability.name} </h2>
-                            
-                        </tr>
-                    );
-                    
-                    
-                }
-                )}
+                                <tr>
+                                    <h2 key={indice} className="pokemon-type-text" >{ability.ability.name} </h2>
 
-                </td>
+                                </tr>
+                            );
+
+
+                        }
+                        )}
+
+                    </td>
                 </tr>
+             
             </table>
-            <div>
-            <h2>Altura:  {pokemon.height / 10} mts</h2>
-            <h2>Peso: {pokemon.weight /10 } kg</h2>
+            <div className="pokemon-type-detalle-2" >                 
+                    <h2 className="pokemon-type-text">Altura: {pokemon.height / 10} mts</h2>
+                    <h2 className="pokemon-type-text">Peso: {pokemon.weight / 10} kg</h2>              
             </div>
             <table className="pokemon-stats">
-                <h2>Experience {pokemon.base_experience}</h2>
+                <h2 className="pokemon-type-text">Experience {pokemon.base_experience}</h2>
                 {pokemon.stats.map((stat, indice) => {
                     return (
-                        <div>
-                            <h2 key={indice} className="pokemon-type-text" > {stat.stat.name} {stat.base_stat} </h2>
+                        <div className="pokemon-type-detalle-2">
+                            <div>
+                            <h2 key={indice} className="pokemon-type-text" > {stat.stat.name} {stat.base_stat}</h2>
+                                </div>
 
                         </div>
                     );
@@ -49,7 +52,7 @@ const PokemonStats = (props) => {
 
                 }
                 )}
-                
+
             </table>
 
         </div>
