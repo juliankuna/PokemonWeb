@@ -15,7 +15,7 @@ const MasBuscados = () => {
 
     const getMasBuscados = (() => {
         if (cantidad == "" || cantidad == 0 || cantidad < 0 || cantidad > 10) {
-            alert("No sea nabo, debe ingresar un numero positivo para ver el top")
+            alert("Ups, debe ingresar un numero positivo menor a 11 para ver el top 😡")
         } else {
 
             const url = urlBDD + cantidad
