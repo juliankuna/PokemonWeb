@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import '../App.css';
+import '../../App.css';
 import { Button } from '@material-ui/core';
-import FavoriteContext from '../contexts/FavoriteContexts';
+import FavoriteContext from '../../contexts/FavoriteContexts';
 
 
 const Pokemon = (props) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../../../App.css';
 import {Button, Icons} from '@material-ui/core';
 import ArrowLeft from '@material-ui/icons/ArrowLeft';
 import ArrowRight from '@material-ui/icons/ArrowRight';

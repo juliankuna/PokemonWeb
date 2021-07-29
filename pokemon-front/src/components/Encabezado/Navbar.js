@@ -1,6 +1,6 @@
 import React from 'react';
-import images from "../images/images";
-import '../App.css';
+import images from "../../images/images";
+import '../../App.css';
 
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import IconButton from '@material-ui/core/IconButton';

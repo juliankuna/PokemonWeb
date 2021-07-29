@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css';
-import Pokemon from './Pokemon';
+import '../../../App.css';
+import Pokemon from '../../Pokemon/Pokemon';
 import Pagination from './Pagination';
-import images from "../images/images";
+import images from "../../../images/images";
 
 const Pokedex = (props) => {
     

@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from 'react';
-import { buscarPokemon } from "../PokeApi";
+import { buscarPokemon } from "../../../PokeApi";
 import {TextField, Button} from '@material-ui/core';
-import Pokemon from './Pokemon';
-import DetallePokemon from "./DetallePokemon";
+import Pokemon from '../../Pokemon/Pokemon';
+import DetallePokemon from "../../Pokemon/DetallePokemon";
 import axios from 'axios';
 
-import images from "../images/images";
+import images from "../../../images/images";
 
 const Buscador = () => {
     const [buscar, setBuscar] = useState('');

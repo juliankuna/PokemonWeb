@@ -1,10 +1,10 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import { buscarPokemon } from "../PokeApi";
+import { buscarPokemon } from "../../PokeApi";
 import { Button} from '@material-ui/core';
-import Pokemon from './Pokemon';
+import Pokemon from '../Pokemon/Pokemon';
 import axios from 'axios';
-import {getPokemones} from '../PokeApi';
+import {getPokemones} from '../../PokeApi';
 
 const ReiniciarBDD = () => {
    

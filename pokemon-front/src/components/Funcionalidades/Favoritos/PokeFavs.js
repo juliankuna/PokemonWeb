@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import '../App.css';
+import '../../../App.css';
 import { Button } from '@material-ui/core';
-import FavoriteContext from '../contexts/FavoriteContexts';
+import FavoriteContext from '../../../contexts/FavoriteContexts';
 import { useState, useEffect } from 'react';
-import { buscarPokemon } from "../PokeApi";
-import Pokemon from './Pokemon';
+import { buscarPokemon } from "../../../PokeApi";
+import Pokemon from '../../Pokemon/Pokemon';
 
 const PokeFavs = (props) => {
     const {pokemonesFavoritos} = useContext(FavoriteContext);

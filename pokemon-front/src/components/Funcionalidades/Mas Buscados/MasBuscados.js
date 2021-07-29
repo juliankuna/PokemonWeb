@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import { TextField, Button } from '@material-ui/core';
-import Pokemon from './Pokemon';
+import Pokemon from '../../Pokemon/Pokemon';
 import axios from "axios";
-import { buscarPokemon } from "../PokeApi";
+import { buscarPokemon } from "../../../PokeApi";
 
 const MasBuscados = () => {
     // const [buscar, setBuscar] = useState('');

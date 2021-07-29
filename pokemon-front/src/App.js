@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Buscador from './components/Buscador';
-import Navbar from "./components/Navbar";
-import Pokedex from "./components/Pokedex";
+import Buscador from './components/Funcionalidades/Buscador/Buscador';
+import Navbar from "./components/Encabezado/Navbar";
+import Pokedex from "./components/Funcionalidades/Pokedex/Pokedex";
 import { useState, useEffect } from 'react';
 import { getPokemones, getPokemonInfo } from "./PokeApi";
-import SingUp from './components/SingUp';
-import SingIn from './components/SingIn';
+import SingUp from './components/Funcionalidades/Loggeo/SingUp';
+import SingIn from './components/Funcionalidades/Loggeo/SingIn';
 import { AppBar } from '@material-ui/core';
 import { Toolbar } from '@material-ui/core';
 //import {MenuIcon} from '@material-ui/icons/Menu';
@@ -14,11 +14,11 @@ import { Toolbar } from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Button, ButtonGroup, Container } from '@material-ui/core';
 import { FavoriteProvider } from './contexts/FavoriteContexts';
-import PokeFavs from './components/PokeFavs';
-import ReiniciarBDD from './components/ReiniciarBDD';
-import BuscarPorTipo from './components/BuscarPorTipo';
-import MasBuscados from './components/MasBuscados';
-import Footer from './components/Footer';
+import PokeFavs from './components/Funcionalidades/Favoritos/PokeFavs';
+import ReiniciarBDD from './components/Funcionalidades/ReiniciarBDD';
+import BuscarPorTipo from './components/Funcionalidades/Buscador/BuscarPorTipo';
+import MasBuscados from './components/Funcionalidades/Mas Buscados/MasBuscados';
+import Footer from './components/Pie/Footer';
 
 function App() {
   // para texto interpolado agregar ```````````````````````````````````````````````````````````` 
